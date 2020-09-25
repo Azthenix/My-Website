@@ -1,0 +1,263 @@
+/*
+	**********************************************************
+	**********************************************************
+	**********************************************************
+	**********************************************************
+	**********************************************************
+*/
+
+/*
+	GENERAL STYLING
+*/
+
+body
+{
+	padding:0px;
+	margin: 0px;
+	font-family: "Tahoma";
+	background: linear-gradient(rgb(22, 12, 54), rgb(14, 7, 37));
+	color: #ccf1ff;
+	text-align: center;
+}
+
+#header
+{
+	padding: 0 px;
+	padding-bottom: 25px;
+	padding-top: 25px;
+	text-align: center;
+	background-image: url('banner.jpg');
+	width: 100%;
+	mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 30%, rgba(0,0,0,1)50%, rgba(0, 0, 0, .5) 70%, rgba(0,0,0,0) 100%);
+	-webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 30%, rgba(0,0,0,1)50%, rgba(0, 0, 0, .5) 70%, rgba(0,0,0,0) 100%);
+	background-size: 100%;
+	min-width: 700px;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	margin: auto;
+}
+
+#header img
+{
+	width: 15%;
+	max-width: 200px;
+	padding-bottom: 20px;
+	margin: auto;
+	border-radius: 50%;
+}
+
+#my-company
+{
+	padding: 10px;
+	color: #160c36;
+	background-color: rgb(196, 238, 255);
+	border-radius: 10px;
+}
+
+#content
+{
+	animation: load .7s;
+	display: inline-block;
+	width: 75%;
+	min-width: 500px;
+	text-align: left;
+	transform-origin : 50% 0px;
+}
+
+p
+{
+	text-align: justify;
+	line-height: 1.5;
+}
+
+/*
+	PROFILE
+*/
+
+#not-me
+{
+	display: inline-block;
+	width: 15%;
+	max-width: 200px;
+	min-width: 100px;
+	vertical-align: top;
+}
+
+#not-me img
+{
+	margin-top: 50px;
+	width: 100%;
+}
+
+#details
+{
+	display: inline-block;
+	margin-top: 50px;
+	width: 80%;
+	padding-bottom: 100px;
+}
+
+#details p
+{
+	padding-left: 20px;
+}
+
+/*
+	**     **  *********  ***   **  **     **
+	***   ***  **         ****  **  **     **
+	**** ****  ******     ** ** **  **     **
+	** *** **  **         **  ****  **     **
+	**  *  **  *********  **   ***  *********
+*/
+
+#menu-bg
+{
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	background-color: rgb(196, 238, 255);
+	background-image: url('filler.png') repeat-x;
+}
+
+#menu
+{
+	display: inline-block;
+	position: sticky;
+	top: 0px;
+	padding: 0px;
+	margin: 0px;
+	font-size: 0px;
+	font-family: "Arial";
+	text-align: center;
+}
+
+#menu a
+{
+	animation: menu-collapse .75s;
+	font-size: 18px;
+	text-align: center;
+	margin: auto;
+	color: rgba(0, 0, 0, 0);
+	width: 0px;
+	height: 100px;
+	line-height: 100px;
+	padding: 0px;
+	display: inline-block;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+#menu img
+{
+	display: inline-block;
+	vertical-align: middle;
+	pointer-events: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+img.arrow
+{
+	animation: flip-arrow-start .75s;
+}
+
+.menu-buttons
+{
+	display: inline-block;
+	align-items: center;
+	vertical-align: middle;
+	padding: 0px;
+	top: 0px;
+	height: 100px;
+	background-color: rgb(196, 238, 255);
+}
+
+#arrow-l
+{
+	display: inline-block;
+	background-color: rgb(196, 238, 255);
+	border-bottom-left-radius: 60px;
+}
+
+#arrow-r
+{
+	display: inline-block;
+	background-color: rgb(196, 238, 255);
+	border-bottom-right-radius: 60px;
+}
+
+/*
+	animations
+*/
+
+#menu:hover a
+{
+	animation: menu-expand .75s forwards;
+}
+
+#menu:hover img.arrow
+{
+	animation: flip-arrow .75s forwards;
+}
+
+#menu a:hover
+{
+	background-color: rgb(124, 175, 195);
+}
+
+/*
+	**********************************************************
+	**********************************************************
+	**********************************************************
+	**********************************************************
+	**********************************************************
+*/
+
+#footer
+{
+	color: #fff;
+	padding: 30px;
+	text-align: center;
+	background-color: rgb(124, 175, 195);
+	height: 50px;
+}
+
+/*
+	**********************************************************
+	**********************************************************
+	**********************************************************
+	**********************************************************
+	**********************************************************
+*/
+
+input[type=text], select, textarea
+{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical
+}
+
+input[type=submit]
+{
+	background-color: rgb(196, 238, 255);
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover
+{
+	background-color: rgb(124, 175, 195);
+}
+
+.fillup-form
+{
+	padding: 50px;
+}
